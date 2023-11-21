@@ -1,0 +1,200 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('mountain-lake-reflection-nature-scenery-4k-wallpaper-uhdpaper.com-385@0@h.jpg');
+  background-size: cover;
+  background-position: fixed;
+  background-position: center;
+  font-style: poppins;
+}
+
+
+header {
+  background-color: rgba(51, 51, 51, 0.2); /* Background color with alpha channel for transparency */
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: relative;
+}
+
+
+.logo h1 {
+  margin: 0;
+} 
+
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.bar {
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  margin: 6px 0;
+  transition: .4s;
+  border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-icon {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #e3e3e34d;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  padding: 10px;
+  border-radius: 50%;
+  transition: all .2s ease;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-shadow: #2c29251a 0 2px 10px, #0000001a 0 2px 10px;
+}
+
+.menu-icon:hover{
+  background-color: #29034980;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  color: var(--white-color);
+}
+body {
+  align-items: center;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  font-family: Inter Tight,sans-serif;
+}
+
+
+.side-panel.show {
+  right: 0;
+  box-shadow: #2c29251a 0 10px 60px, #0000001a 0 10px 60px;
+}
+
+.side-panel {
+  position: fixed;
+  top: 0;
+  right: -50%; /* Hide the side panel initially */
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff62;
+  overflow-y: auto;
+  transition: 0.4s;
+  z-index: 2;
+  display: flex;
+  justify-content: right;
+  backdrop-filter: blur(20px);
+}
+.side-panel.show {
+  right: 0; /* Show the side panel by setting left to 0 */
+  box-shadow: rgba(44, 41, 37, 0.1) 0px 10px 60px, rgba(0, 0, 0, 0.1) 0px 10px 60px;
+}
+.side-panel ul {
+  margin: auto;
+  list-style: none;
+  padding: 10px;
+  text-align: right;
+}
+@media all and (max-width: 768px) {
+  .side-panel ul {
+    margin: auto 10px;
+    list-style: none;
+    padding: 10px;
+    text-align: right;
+  }
+}
+
+.side-panel ul li {
+  margin: 30px 0;
+  /* Hide blue highlight */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.side-panel ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  transition: opacity 0.2s ease;
+}
+
+.side-panel ul li a:hover {
+  color: var(--heading-text-color);
+}
+
+
+#pricing {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.1); /* Set a transparent white background color */
+  border-radius: 12px; /* Add rounded corners for a classy look */
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); /* Add a subtle shadow for depth */
+  padding: 20px;
+}
+
+.pricing-option {
+  background-color:rgba(255, 255, 255, 0.5);
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+}
+
+.price {
+  font-size: 1.5em;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+
+footer {
+  background-color: #93cd89;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

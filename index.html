@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>EDUconnect</title>
+    <style>
+    </style>
+</head>
+
+<body>
+   
+    <header>
+        <div class="logo">
+            <h1>Tutoring Service</h1>
+        </div>
+        <div class="menu-icon">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+            <div class="side-pannel">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tutors">Tutors</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home">
+        <center>
+            <h2>Welcome to Your Tutoring Service</h2>
+            <p>Connecting students with qualified tutors for personalized learning.</p>
+        </center>
+    </section>
+
+    <section id="tutors">
+        <h2>Our Tutors</h2>
+        <!-- Tutors' information will go here -->
+        <p></p>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <!-- Pricing details will go here -->
+        <div class="pricing-container">
+            <div class="pricing-option">
+                <h3>Basic Plan</h3>
+                <p class="price">$3000/month</p>
+                <ul>
+                    <li>Access to all basic features</li>
+                    <li>Limited support</li>
+                    <li>Limited supphhhhhhhhhhhort</li>
+                    <li>Limited support</li>
+                </ul>
+            </div>
+            <div class="pricing-option">
+                <h3>Premium Plan</h3>
+                <p class="price">$1000.99/month</p>
+                <ul>
+                    <li>Full access to all features</li>
+                    <li>24/7 customer support</li>
+                    <li>Limited support</li>
+                    <li>Limited support</li>
+                    <li>Limited support</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Send us a message, and we'll respond via WhatsApp.</p>
+        <form action="whatsapp-handler.php" method="post">
+            <!--contact form fields go here -->
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Tutoring Service. All rights reserved.</p>
+    </footer>
+<script>
+const menuIcon = document.querySelector('.menu-icon');
+const sidePanel = document.querySelector('.side-panel');
+const content = document.querySelector('.content');
+
+menuIcon.addEventListener('click', () => {
+  sidePanel.classList.toggle('show');
+});
+const links = document.querySelectorAll('.side-panel li');
+links.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    sidePanel.classList.toggle('show');
+  });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+// Add smooth scrolling to all links
+$("a").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  } // End if
+});
+});
+</script>
+    <!-- Other HTML code -->
+
+
+  
+    
+</body>
+
+</html>
